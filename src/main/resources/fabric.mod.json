@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "zoo_expansion_ultimate",
+  "version": "${version}",
+  "name": "Zoo Expansion Ultimate",
+  "description": "A starter project for a custom zoo expansion mod. The lion model integration is a work in progress.",
+  "authors": ["Zoo Expansion Ultimate contributors"],
+  "license": "GPL-3.0-or-later",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.jayanshsaxena.zooexpansion.ZooExpansionUltimate"],
+    "client": ["com.jayanshsaxena.zooexpansion.client.ZooExpansionUltimateClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
