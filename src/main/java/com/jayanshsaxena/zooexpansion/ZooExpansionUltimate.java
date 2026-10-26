@@ -1,6 +1,8 @@
 package com.jayanshsaxena.zooexpansion;
 
+import com.jayanshsaxena.zooexpansion.entity.ZooEntityTypes;
 import net.fabricmc.api.ModInitializer;
+import net.minecraft.resources.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -10,6 +12,11 @@ public final class ZooExpansionUltimate implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        LOGGER.info("Zoo Expansion Ultimate initialized. Animal/entity registration is the next integration step.");
+        ZooEntityTypes.initialize();
+        LOGGER.info("Zoo Expansion Ultimate initialized; lion entity registered.");
+    }
+
+    public static Identifier id(String path) {
+        return Identifier.fromNamespaceAndPath(MOD_ID, path);
     }
 }

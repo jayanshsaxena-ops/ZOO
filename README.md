@@ -1,25 +1,23 @@
-# Zoo Expansion Ultimate — Fabric 26.3 starter + lion design assets
+# Zoo Expansion Ultimate — Fabric 26.3 lion prototype
 
-This is a fresh starter project for Minecraft 26.3 Fabric, with a custom original lion design asset included.
+This revision adds a first-pass custom lion entity, entity renderer, model geometry, walking leg motion, tail sway, and a custom texture. It is an **original prototype**, not the Untamed Wilds model.
 
-## Included
-- Fabric mod starter structure and entrypoints
-- GitHub Actions workflow (`.github/workflows/build.yml`)
-- `src/main/resources/assets/zoo_expansion_ultimate/models/lion/lion_texture.png`
-- `src/main/resources/assets/zoo_expansion_ultimate/models/lion/lion_model_spec.json`
-
-## Honest status
-The starter's GitHub Actions workflow can build the starter project, but **this is not yet a complete playable zoo mod**. The lion entity, entity registration, renderer, spawn egg, and animations are not implemented yet. The lion JSON is a documented design specification, not a native Minecraft renderer model. The PNG is a custom original texture atlas.
-
-I could verify the upstream Untamed Wilds repository exists, but I could not retrieve its model assets in this environment, so this ZIP does not contain copied Untamed Wilds assets. The design is an original placeholder intended for conversion and renderer integration.
+## Status and limitations
+- The GitHub Actions workflow is configured to build the project.
+- A lion entity type with ID `zoo_expansion_ultimate:lion` is registered.
+- A first-pass custom model and renderer are included.
+- The texture/model are original placeholders; the Untamed Wilds assets have not been copied.
+- No spawn egg is included yet. If the project compiles, try `/summon zoo_expansion_ultimate:lion` in a creative test world.
+- This code has not been built or launched in this environment. Please run the GitHub Actions workflow and share any compiler errors; Minecraft 26.3 APIs are changing and may require adjustments.
 
 ## Build
-Upload the contents of this folder to your GitHub repository, ensuring `.github/workflows/build.yml` is committed on the default branch. Open **Actions**, run **Build mod**, then download the artifact from the completed run.
+Upload the contents of this folder to the repository, committing the root files and `.github/workflows/build.yml`. Then open Actions and run **Build mod**. Download the artifact from the successful run.
 
-## Next implementation steps
-1. Convert the lion geometry into a model supported by the chosen Fabric 26.3 renderer.
-2. Implement and register the lion entity.
-3. Add renderer, spawn egg/command, and walk/idle animation.
-4. Build and test in Minecraft 26.3.
+## Next
+1. Fix any compiler/API errors reported by Actions.
+2. Test the model in game and refine the proportions/texture.
+3. Add spawn egg, sounds, feeding/taming or zoo behaviours.
+4. Investigate adapting the licensed Untamed Wilds lion assets if desired.
 
-Upstream model reference for future licensed adaptation: https://github.com/RayTrace082/untamedwilds
+Reference documentation: https://docs.fabricmc.net/develop/entities/first-entity
+Untamed Wilds source reference: https://github.com/RayTrace082/untamedwilds

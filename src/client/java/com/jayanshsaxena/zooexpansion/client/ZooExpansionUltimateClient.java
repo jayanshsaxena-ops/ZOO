@@ -1,14 +1,15 @@
 package com.jayanshsaxena.zooexpansion.client;
 
+import com.jayanshsaxena.zooexpansion.client.model.LionModelLayers;
+import com.jayanshsaxena.zooexpansion.client.renderer.LionRenderer;
+import com.jayanshsaxena.zooexpansion.entity.ZooEntityTypes;
 import net.fabricmc.api.ClientModInitializer;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 
 public final class ZooExpansionUltimateClient implements ClientModInitializer {
-    private static final Logger LOGGER = LoggerFactory.getLogger("zoo_expansion_ultimate");
-
     @Override
     public void onInitializeClient() {
-        LOGGER.info("Zoo Expansion Ultimate client initialized.");
+        LionModelLayers.register();
+        EntityRendererRegistry.register(ZooEntityTypes.LION, LionRenderer::new);
     }
 }
