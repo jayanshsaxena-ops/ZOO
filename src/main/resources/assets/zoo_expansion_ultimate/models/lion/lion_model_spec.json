@@ -1,0 +1,397 @@
+{
+  "format": "zoo-expansion-geometry-v1",
+  "model_name": "lion",
+  "units": "Minecraft model pixels (16 pixels = 1 block)",
+  "texture": "lion_texture.png",
+  "design_notes": {
+    "proportions": "long muscular body, four separate legs, visible projecting muzzle, mane surrounds head/shoulders without obscuring eyes",
+    "palette": {
+      "body": "golden ochre",
+      "mane": "layered dark brown",
+      "muzzle": "warm cream",
+      "paws": "dark brown"
+    }
+  },
+  "parts": [
+    {
+      "name": "body",
+      "shape": "cuboid",
+      "from": [
+        -5,
+        7,
+        -8
+      ],
+      "to": [
+        5,
+        14,
+        7
+      ],
+      "texture_region": [
+        0,
+        0,
+        16,
+        16
+      ],
+      "pivot": [
+        0,
+        10,
+        0
+      ]
+    },
+    {
+      "name": "belly",
+      "shape": "cuboid",
+      "from": [
+        -4,
+        10,
+        -6
+      ],
+      "to": [
+        4,
+        13,
+        5
+      ],
+      "texture_region": [
+        0,
+        16,
+        16,
+        16
+      ],
+      "pivot": [
+        0,
+        11,
+        0
+      ]
+    },
+    {
+      "name": "mane_main",
+      "shape": "cuboid",
+      "from": [
+        -6,
+        3,
+        -8
+      ],
+      "to": [
+        6,
+        16,
+        1
+      ],
+      "texture_region": [
+        16,
+        0,
+        32,
+        32
+      ],
+      "pivot": [
+        0,
+        9,
+        -3
+      ]
+    },
+    {
+      "name": "mane_left_layer",
+      "shape": "cuboid",
+      "from": [
+        -7,
+        5,
+        -7
+      ],
+      "to": [
+        -4,
+        14,
+        0
+      ],
+      "texture_region": [
+        16,
+        0,
+        32,
+        32
+      ],
+      "pivot": [
+        -5,
+        9,
+        -3
+      ]
+    },
+    {
+      "name": "mane_right_layer",
+      "shape": "cuboid",
+      "from": [
+        4,
+        5,
+        -7
+      ],
+      "to": [
+        7,
+        14,
+        0
+      ],
+      "texture_region": [
+        16,
+        0,
+        32,
+        32
+      ],
+      "pivot": [
+        5,
+        9,
+        -3
+      ]
+    },
+    {
+      "name": "head",
+      "shape": "cuboid",
+      "from": [
+        -3,
+        5,
+        -10
+      ],
+      "to": [
+        3,
+        11,
+        -5
+      ],
+      "texture_region": [
+        0,
+        0,
+        16,
+        16
+      ],
+      "pivot": [
+        0,
+        8,
+        -7
+      ]
+    },
+    {
+      "name": "muzzle",
+      "shape": "cuboid",
+      "from": [
+        -2,
+        6,
+        -12
+      ],
+      "to": [
+        2,
+        9,
+        -9
+      ],
+      "texture_region": [
+        48,
+        0,
+        16,
+        16
+      ],
+      "pivot": [
+        0,
+        7,
+        -10
+      ]
+    },
+    {
+      "name": "ear_left",
+      "shape": "cuboid",
+      "from": [
+        -4,
+        10,
+        -8
+      ],
+      "to": [
+        -2,
+        12,
+        -6
+      ],
+      "texture_region": [
+        48,
+        16,
+        16,
+        16
+      ],
+      "pivot": [
+        -3,
+        10,
+        -7
+      ]
+    },
+    {
+      "name": "ear_right",
+      "shape": "cuboid",
+      "from": [
+        2,
+        10,
+        -8
+      ],
+      "to": [
+        4,
+        12,
+        -6
+      ],
+      "texture_region": [
+        48,
+        16,
+        16,
+        16
+      ],
+      "pivot": [
+        3,
+        10,
+        -7
+      ]
+    },
+    {
+      "name": "front_left_leg",
+      "shape": "cuboid",
+      "from": [
+        -4,
+        0,
+        -5
+      ],
+      "to": [
+        -1,
+        8,
+        -2
+      ],
+      "texture_region": [
+        0,
+        0,
+        16,
+        16
+      ],
+      "pivot": [
+        -2.5,
+        7,
+        -3.5
+      ]
+    },
+    {
+      "name": "front_right_leg",
+      "shape": "cuboid",
+      "from": [
+        1,
+        0,
+        -5
+      ],
+      "to": [
+        4,
+        8,
+        -2
+      ],
+      "texture_region": [
+        0,
+        0,
+        16,
+        16
+      ],
+      "pivot": [
+        2.5,
+        7,
+        -3.5
+      ]
+    },
+    {
+      "name": "back_left_leg",
+      "shape": "cuboid",
+      "from": [
+        -4,
+        0,
+        3
+      ],
+      "to": [
+        -1,
+        8,
+        6
+      ],
+      "texture_region": [
+        0,
+        0,
+        16,
+        16
+      ],
+      "pivot": [
+        -2.5,
+        7,
+        4.5
+      ]
+    },
+    {
+      "name": "back_right_leg",
+      "shape": "cuboid",
+      "from": [
+        1,
+        0,
+        3
+      ],
+      "to": [
+        4,
+        8,
+        6
+      ],
+      "texture_region": [
+        0,
+        0,
+        16,
+        16
+      ],
+      "pivot": [
+        2.5,
+        7,
+        4.5
+      ]
+    },
+    {
+      "name": "tail",
+      "shape": "cuboid",
+      "from": [
+        -1,
+        9,
+        7
+      ],
+      "to": [
+        1,
+        10,
+        13
+      ],
+      "texture_region": [
+        0,
+        0,
+        16,
+        16
+      ],
+      "pivot": [
+        0,
+        9,
+        7
+      ]
+    },
+    {
+      "name": "tail_tuft",
+      "shape": "cuboid",
+      "from": [
+        -2,
+        8,
+        12
+      ],
+      "to": [
+        2,
+        11,
+        15
+      ],
+      "texture_region": [
+        16,
+        32,
+        16,
+        16
+      ],
+      "pivot": [
+        0,
+        9,
+        13
+      ]
+    }
+  ],
+  "animation_notes": {
+    "walk": "alternate diagonal leg swing around each leg pivot",
+    "idle": "small head bob and tail sway",
+    "important": "This is a design asset/specification, not yet wired to a Minecraft entity renderer."
+  }
+}
